@@ -1,0 +1,17 @@
+.chat{
+    display: flex;
+    flex-direction: row;
+    
+}
+.chat__email{
+    color: blue;
+    font-weight: bold;
+}
+.chat__texto{
+    color: green;
+    font-style: italic;
+    margin-left: 10px;
+}
+.chat__fecha{
+    color: brown;
+}
