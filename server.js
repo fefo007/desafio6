@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const {engine} = require('express-handlebars')
 const {Server:HttpServer}=require('http');
 const {Server:IOServer}=require('socket.io');
 const httpServer=new HttpServer(app);
@@ -11,6 +12,8 @@ let messages = [];
 let products = [];
 
 app.use(express.static('public'));
+app.engine("handlebars",engine())
+app.set("view engine","handlebars")
 
 io.on('connection',socket=> {
     console.log('Un cliente se ha conectado');

@@ -15,3 +15,17 @@
 .chat__fecha{
     color: brown;
 }
+.chatArea{
+    overflow: scroll;
+    height: 300px;
+    width: 850px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+.productsList{
+    overflow: scroll;
+    height: 300px;
+    margin-bottom: 50px;
+}
